@@ -27,7 +27,7 @@ ol {
   padding: 0;
 }
 
-.img {
+img {
   display: block;
 }
 
@@ -67,10 +67,6 @@ ol {
   margin-right: 76px;
 }
 
-.logo-header {
-  padding: 24px 0;
-}
-
 .logo-studio {
   color: #2e2f42;
   margin-right: 76px;
@@ -84,7 +80,6 @@ ol {
   display: flex;
   gap: 40px;
   align-items: center;
-  padding: 24px 0;
 }
 
 .nav-link {
@@ -94,6 +89,7 @@ ol {
   letter-spacing: 0.02em;
   color: #2e2f42;
   display: inline-block;
+  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -128,6 +124,7 @@ ol {
 
 .hero-section {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .main-page-title {
@@ -156,12 +153,26 @@ ol {
   display: block;
   margin: 0 auto;
   border: none;
-  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
 }
 
 .btn:hover,
 .btn:focus {
   background-color: #404bbf;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .features-list {
@@ -170,7 +181,7 @@ ol {
 }
 
 .features-item {
-  width: calc(100%-72 / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .features-item-title {
@@ -216,13 +227,16 @@ ol {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+.our-team-member-text {
+  padding: 32px 0;
+}
+
 .our-team-member-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 32px;
   margin-bottom: 8px;
   text-align: center;
 }
@@ -232,7 +246,6 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  margin-bottom: 32px;
   text-align: center;
 }
 
@@ -258,16 +271,11 @@ ol {
   width: calc(100%-48px / 3);
 }
 
-.portfolio-photo {
-  margin-bottom: 0;
-}
-
 .portfolio-text {
   border-bottom: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
-  padding-left: 16px;
-  padding-top: 32px;
+  padding: 32px 16px;
 }
 
 .portfolio-item-title {
@@ -296,6 +304,7 @@ ol {
 .logo-footer {
   display: inline-block;
   margin-left: auto;
+  margin-bottom: 16px;
 }
 
 .footer-descr {
@@ -303,6 +312,5 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-top: 16px;
   max-width: 264px;
 }
